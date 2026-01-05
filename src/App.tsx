@@ -129,7 +129,7 @@ export default function App() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => setShowLoginModal(true)}
+                onClick={() => setCurrentSection('classifier')}
                 className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-2xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 {language === 'en' ? '✨ Get Started 🚀' : '✨ शुरू करें 🚀'}
@@ -145,7 +145,7 @@ export default function App() {
           <div className="relative">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1557505482-fb5252df1d67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBzcHJheWluZyUyMGNyb3BzJTIwYWdyaWN1bHR1cmUlMjBwZXN0aWNpZGUlMjBlcXVpcG1lbnR8ZW58MXx8fHwxNzU4NDg1NTc0fDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Farmer Spraying Crops"
+              alt="Indian Farmer Spraying Pesticide"
               className="w-full h-96 object-cover rounded-3xl shadow-2xl border-4 border-white cursor-pointer"
               onClick={onHeroImageClick}
             />
